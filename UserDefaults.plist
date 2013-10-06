@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   UserDefaults.plist
+   Cerebral Imprint
+
+   Created by Alex Rose on 12/2/08.
+   Copyright 2008 The Cobalt Group. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+		<key>checkForUpdateOnStart</key>
+<true/>
+<key>knownMinPercent</key>
+<integer>75</integer>
+<key>knownMinViewings</key>
+<integer>5</integer>
+<key>knownRecentWeight</key>
+<integer>70</integer>
+<key>workingSetPreference</key>
+<integer>60</integer>
+<key>workingSetSize</key>
+<integer>5</integer>
+<key>enterAnswersQuestions</key>
+<true/>
+
+<key>mcPauseDuration</key>
+<integer>5</integer>
+    </dict>
+</plist>

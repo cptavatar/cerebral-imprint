@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5EEC126F-1EEC-4698-9424-62CC78C2B683</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Cerebral Imprint</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>76C4825D-1838-41BB-AE66-4513AFFE77AC</key>
+		<string>https://github.com/cptavatar/cerebral-imprint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Cerebral Imprint.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>76C4825D-1838-41BB-AE66-4513AFFE77AC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cptavatar/cerebral-imprint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>76C4825D-1838-41BB-AE66-4513AFFE77AC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>76C4825D-1838-41BB-AE66-4513AFFE77AC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cerebral-imprint</string>
+		</dict>
+	</array>
+</dict>
+</plist>
