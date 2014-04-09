@@ -42,7 +42,7 @@
 // delegate for panel - shut down app on window close
 - (void) windowWillClose:(NSNotification *)aNotification 
 {
-    [[NSUserDefaultsController sharedUserDefaultsController] save:self];
+    //[[NSUserDefaultsController sharedUserDefaultsController] save:self];
     [NSApp stopModal];  
 }
 

@@ -30,10 +30,9 @@
     return self;
 }
 
-- (void) finalize 
+- (void) dealloc 
 {
     deckManager = nil;
-    [super finalize];
 }
 
 // Subclass Overrides ////////////////
@@ -47,7 +46,6 @@
 - (void)makeWindowControllers 
 { 
     CerebralImprintWindowController *controller = [[CerebralImprintWindowController alloc] init];
-    [controller autorelease];
     [self addWindowController:controller]; 
 } 
 

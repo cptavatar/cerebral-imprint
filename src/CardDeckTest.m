@@ -23,7 +23,7 @@
 //create a new test deck based on one or more input decks
 - (id) init:(int)cDirection deckDirection:(int)dDirection decks:(NSArray*)cardDecks
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     
     int numDecks = [cardDecks count];
     cardDirection = cDirection;
@@ -180,8 +180,6 @@
 //correct answer
 - (void) generateMultipleChoice
 {
-    if(multipleChoiceAnswers != nil)
-        [multipleChoiceAnswers release];
     
     multipleChoiceAnswers = [[NSMutableArray alloc] init];
     int cardIndex[4], i, j;

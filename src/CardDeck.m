@@ -22,7 +22,7 @@
 
 - init
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     name = @"New Deck";
     deck = [[NSMutableArray alloc] init];
     return self;
@@ -38,7 +38,7 @@
 
 - (id) initWithCoder:(NSCoder *)coder
 {
-    [super init];
+    if (!(self = [super init])) return nil;
    
     deck = [coder decodeObjectForKey:@"deck"];
     name = [coder decodeObjectForKey:@"name"];
@@ -74,11 +74,10 @@
 }
 
 // tell the GC we're done 
-- (void)finalize 
+- (void)dealloc 
 {
 	name = nil;
 	deck = nil;
-	[super finalize];
 }	
 
 // Getters & Setters ///////////////

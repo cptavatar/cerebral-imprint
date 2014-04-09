@@ -71,12 +71,6 @@
     Preferences * instance = [Preferences instance];
     [testCards sortUsingSelector:@selector(compareByMastery:)];
     
-    if(workingSet != nil)
-        [workingSet release];
-    if(knownSet != nil)
-        [knownSet release];
-    if(unknownCards != nil)
-        [unknownCards release];
 
     
     workingSet = [[NSMutableSet alloc]init];

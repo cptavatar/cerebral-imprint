@@ -23,7 +23,7 @@
 
 - init 
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     front = @"New Front";
     back = @"New Back";
     total = 0;
@@ -115,12 +115,11 @@
 }
 
 // Tell the GC what we're done with
-- (void) finalize
+- (void) dealloc
 {
     front = nil;
     back = nil;
     recentResults = nil;
-    [super finalize];
 }
 
 // NSCoding Methods ////////////////////////////////////
@@ -138,7 +137,7 @@
 
 - (id) initWithCoder:(NSCoder *)coder
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     front = [coder decodeObjectForKey:@"front"];
     back = [coder decodeObjectForKey:@"back"];
     total = [coder decodeIntForKey:@"total"] ;

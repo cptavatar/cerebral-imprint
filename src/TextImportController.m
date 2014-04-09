@@ -86,7 +86,6 @@
 
     }
 
-    [fileContents release];
 
     return retval;
 }

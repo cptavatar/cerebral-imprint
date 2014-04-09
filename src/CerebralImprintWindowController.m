@@ -20,17 +20,17 @@
 #import "Preferences.h"
 
 @implementation CerebralImprintWindowController
--(id) init 
-{ 
+-(id) init
+{
     self = [super initWithWindowNibName:@"CerebralImprintDocument"];
-    return self; 
-} 
+    return self;
+}
 
 
 // return true if only a single deck is selected.
-- (BOOL) singleDeckSelected 
+- (BOOL) singleDeckSelected
 {
-    int selectedIndex = [arrayController selectionIndex];  
+    int selectedIndex = [arrayController selectionIndex];
     return ( selectedIndex != NSNotFound && [[arrayController selectedObjects] count] == 1);
 }
 
@@ -47,16 +47,16 @@
     result = [oPanel runModalForDirectory:NSHomeDirectory()
                                      file:nil types:fileTypes];
     if (result == NSOKButton) {
-     NSArray *filesToOpen = [oPanel filenames];
-     NSString *aFile = [filesToOpen objectAtIndex:0];
-     [importController setFile:aFile];
-     [NSApp runModalForWindow:importPanel];
-     [[self document] saveDocument:self];
+        NSArray *filesToOpen = [oPanel filenames];
+        NSString *aFile = [filesToOpen objectAtIndex:0];
+        [importController setFile:aFile];
+        [NSApp runModalForWindow:importPanel];
+        [[self document] saveDocument:self];
     }
 }
 
 // Hander for send feedback menu item
-- (IBAction) sendFeedback:(id)sender 
+- (IBAction) sendFeedback:(id)sender
 {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"mailto:cerebral.imprint@alexrose.net"]];
 }
@@ -65,29 +65,27 @@
 - (IBAction) editButton:(id)sender
 {
     if([self singleDeckSelected]) {
-            [deckEditorController setCurrentDeck:[[arrayController selectedObjects] objectAtIndex:0]];
+        [deckEditorController setCurrentDeck:[[arrayController selectedObjects] objectAtIndex:0]];
         [NSApp runModalForWindow:editorPanel];
         [[self document] saveDocument:self];
-        [[NSGarbageCollector defaultCollector] collectIfNeeded];
     }
 }
 
 // Delete button handler
 - (IBAction) deleteButton:(id)sender
 {
-    int selectedIndex = [arrayController selectionIndex]; 
+    int selectedIndex = [arrayController selectionIndex];
     if( selectedIndex != NSNotFound) {
         if(NSAlertDefaultReturn == NSRunAlertPanel(@"Delete Selected Decks", @"Are you sure?",@"Yes", @"No", nil)){
             [arrayController removeObjects:[arrayController selectedObjects]];
             [[self document] saveDocument:self];
-            [[NSGarbageCollector defaultCollector] collectIfNeeded];
             
         }
     }
 }
 
 // handler for start quiz button
-- (IBAction) startTest:(id)sender 
+- (IBAction) startTest:(id)sender
 {
     int testMode = [testModeRadio selectedRow];
     int deckMode = [deckModeRadio selectedRow];
@@ -99,7 +97,7 @@
         return;
     }
     
-    CardDeckTest * cdt; 
+    CardDeckTest * cdt;
     if(deckMode == DECK_LEARN)
         cdt = [[LearningTest alloc]init:cardMode decks:selectedDecks];
     else
@@ -129,12 +127,12 @@
             }
             break;
             
-            //short answer test 
+            //short answer test
         case 2:
             controller = fitbTestController;
             panel = fitbTestPanel;
             break;
-        
+            
         default:
             return;
     }
@@ -146,8 +144,6 @@
     
     [controller setCurrentTest:nil];
     [self setCurrentTest:nil];
-    [[NSGarbageCollector defaultCollector] collectIfNeeded];
-    
 }
 
 // Handler for the export decks menu item
@@ -174,24 +170,26 @@
             case 3:
                 encoding = NSUTF16BigEndianStringEncoding;
                 break;
-            case 4: 
+            case 4:
                 encoding = NSMacOSRomanStringEncoding;
                 break;
             default:
                 encoding = NSUTF8StringEncoding;
         }
         
-        [[self document] exportDecks:[savePanel filename] selectedIndexes:[arrayController selectionIndexes] mode:([exportMode indexOfSelectedItem] == 0) encodingType:encoding];
+        //FIXME, disabled because of ARC
+       // [[self document] exportDecks:[savePanel filename] selectedIndexes:[arrayController selectionIndexes] mode:([exportMode indexOfSelectedItem] == 0) encodingType:encoding];
     }
 }
+
 // Getters and Setters //////////////////////////
 
-- (NSMutableArray *) decks 
+- (NSMutableArray *) decks
 {
     return [[self document] decks];
 }
 
-- (CardDeckTest*) currentTest 
+- (CardDeckTest*) currentTest
 {
     return currentTest;
 }
@@ -202,9 +200,9 @@
     [[self document] saveDocument:self];
 }
 
-- (void) setCurrentTest:(CardDeckTest*)newTest 
+- (void) setCurrentTest:(CardDeckTest*)newTest
 {
-    [self willChangeValueForKey:@"currentTest"];   
+    [self willChangeValueForKey:@"currentTest"];
     currentTest = newTest;
     [self didChangeValueForKey:@"currentTest"];
 }

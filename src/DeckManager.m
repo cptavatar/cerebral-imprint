@@ -22,15 +22,14 @@
 
 -init
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     decks = [[NSMutableArray alloc] init];
     return self;
 }
 
-- (void) finalize 
+- (void) dealloc 
 {
     decks = nil;
-    [super finalize];
 }
 
 - (CardDeck *) getDeckAtIndex:(int)index
@@ -61,7 +60,7 @@
 
 -(id) initWithCoder:(NSCoder *)coder
 {
-    [super init];
+    if (!(self = [super init])) return nil;
     decks = [coder decodeObjectForKey:@"decks"];
     return self;
 }
