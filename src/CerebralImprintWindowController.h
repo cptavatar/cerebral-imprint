@@ -17,6 +17,7 @@
 //
 #import <Cocoa/Cocoa.h>
 #import "DeckEditorController.h"
+#import "CerebralImprintDocument.h"
 #import "CardDeckTest.h"
 #import "LearningTest.h"
 

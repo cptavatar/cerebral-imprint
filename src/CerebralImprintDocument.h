@@ -28,8 +28,7 @@
 // selectedIndexes - an index set containing the indexs of the decks to export
 // mode - a simple toggle as to whether we should export as a CSV file or one side per line
 // encodingType - what encoding to use when writing the data (UTF8, etc...)
--(void) exportDecks:(NSString*)absolutePath selectedIndexes:(NSIndexSet*)indices mode:(BOOL)isCSV encodingType:(NSStringEncoding)encoding
-;
+- (void) exportDecks:(NSString*)absolutePath selectedIndexes:(NSIndexSet*)indices mode:(BOOL)isCSV encodingType:(NSStringEncoding)encoding;
 
 // Getters and setter for the contents of our document, 
 // arrays of CardDecks

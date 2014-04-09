@@ -177,8 +177,9 @@
                 encoding = NSUTF8StringEncoding;
         }
         
-        //FIXME, disabled because of ARC
-       // [[self document] exportDecks:[savePanel filename] selectedIndexes:[arrayController selectionIndexes] mode:([exportMode indexOfSelectedItem] == 0) encodingType:encoding];
+        CerebralImprintDocument * doc = [self document];
+        [doc exportDecks:[savePanel filename] selectedIndexes:[arrayController selectionIndexes] mode:([exportMode indexOfSelectedItem] == 0) encodingType:encoding];
+       
     }
 }
 
