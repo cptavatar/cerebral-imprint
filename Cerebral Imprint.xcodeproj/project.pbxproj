@@ -54,7 +54,9 @@
 		FA5B0EB70FDB44F20065846D /* SAController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0EB00FDB44F20065846D /* SAController.m */; };
 		FA5B10720FDB7C230065846D /* TextImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B10710FDB7C230065846D /* TextImportController.m */; };
 		FA5B12C30FDBA81C0065846D /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5B12C20FDBA81C0065846D /* UserDefaults.plist */; };
+		FA6FBAC818F65075006EF835 /* ShortcutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBAC718F65075006EF835 /* ShortcutController.m */; };
 		FAD4B5690FF0497700F99014 /* Cerebral Imprint.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D15AC370486D014006FF6A4 /* Cerebral Imprint.app */; };
+		FAE7F60A18FB8CF900D59C01 /* ShortcutElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -114,7 +116,11 @@
 		FA5B10700FDB7C230065846D /* TextImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextImportController.h; path = src/TextImportController.h; sourceTree = "<group>"; };
 		FA5B10710FDB7C230065846D /* TextImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextImportController.m; path = src/TextImportController.m; sourceTree = "<group>"; };
 		FA5B12C20FDBA81C0065846D /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
+		FA6FBAC618F65075006EF835 /* ShortcutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutController.h; path = src/ShortcutController.h; sourceTree = "<group>"; };
+		FA6FBAC718F65075006EF835 /* ShortcutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutController.m; path = src/ShortcutController.m; sourceTree = "<group>"; };
 		FAD4B59C0FF06CCE00F99014 /* Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Readme.rtf; sourceTree = "<group>"; };
+		FAE7F60818FB8CF900D59C01 /* ShortcutElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutElement.h; path = src/ShortcutElement.h; sourceTree = "<group>"; };
+		FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutElement.m; path = src/ShortcutElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,10 @@
 				FA5B0EB00FDB44F20065846D /* SAController.m */,
 				FA5B10700FDB7C230065846D /* TextImportController.h */,
 				FA5B10710FDB7C230065846D /* TextImportController.m */,
+				FA6FBAC618F65075006EF835 /* ShortcutController.h */,
+				FA6FBAC718F65075006EF835 /* ShortcutController.m */,
+				FAE7F60818FB8CF900D59C01 /* ShortcutElement.h */,
+				FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -255,7 +265,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Cerebral Imprint" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -324,9 +334,11 @@
 				FA5B0EB30FDB44F20065846D /* DeckEditorController.m in Sources */,
 				FA5B0EB50FDB44F20065846D /* FlashController.m in Sources */,
 				FA5B0EB60FDB44F20065846D /* MCController.m in Sources */,
+				FAE7F60A18FB8CF900D59C01 /* ShortcutElement.m in Sources */,
 				FA5B0EB70FDB44F20065846D /* SAController.m in Sources */,
 				FA5B10720FDB7C230065846D /* TextImportController.m in Sources */,
 				FA4BB33F0FE5858400309E1D /* CerebralImprintWindowController.m in Sources */,
+				FA6FBAC818F65075006EF835 /* ShortcutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +388,6 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -395,7 +406,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cerebral Imprint_Prefix.pch";
@@ -410,7 +420,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_ENABLE_OBJC_GC = required;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -424,7 +433,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Applications/Education;

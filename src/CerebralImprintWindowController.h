@@ -51,6 +51,9 @@
 // References to the multiple choice panel and controller
     IBOutlet id mcTestPanel;
     IBOutlet id mcTestController;
+    
+    IBOutlet id ksTestPanel;
+    IBOutlet id ksTestController;
 
 // References to the custom export view and its mode chooser     
     IBOutlet id exportView;

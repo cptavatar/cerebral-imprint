@@ -23,6 +23,7 @@
 -(id) init
 {
     self = [super initWithWindowNibName:@"CerebralImprintDocument"];
+    [Preferences instance];
     return self;
 }
 
@@ -131,6 +132,12 @@
         case 2:
             controller = fitbTestController;
             panel = fitbTestPanel;
+            break;
+            
+            //keyboard shortcut
+        case 3:
+            controller = ksTestController;
+            panel = ksTestPanel;
             break;
             
         default:
