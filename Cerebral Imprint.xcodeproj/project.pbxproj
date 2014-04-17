@@ -38,26 +38,41 @@
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		FA2BE46D18FF4B7C00109980 /* ShortcutParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE46C18FF4B7C00109980 /* ShortcutParser.m */; };
+		FA2BE47618FF4FAA00109980 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2BE47518FF4FAA00109980 /* XCTest.framework */; };
+		FA2BE47C18FF4FAA00109980 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE47A18FF4FAA00109980 /* InfoPlist.strings */; };
+		FA2BE48618FF586E00109980 /* ShortcutParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE48518FF586E00109980 /* ShortcutParserTest.m */; };
+		FA2BE49918FF5AD900109980 /* CerebralImprintWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE48818FF5AD900109980 /* CerebralImprintWindowController.m */; };
+		FA2BE49A18FF5AD900109980 /* DeckEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE48A18FF5AD900109980 /* DeckEditorController.m */; };
+		FA2BE49B18FF5AD900109980 /* FlashController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE48C18FF5AD900109980 /* FlashController.m */; };
+		FA2BE49C18FF5AD900109980 /* MCController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE48E18FF5AD900109980 /* MCController.m */; };
+		FA2BE49D18FF5AD900109980 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE49018FF5AD900109980 /* PreferencesController.m */; };
+		FA2BE49E18FF5AD900109980 /* SAController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE49218FF5AD900109980 /* SAController.m */; };
+		FA2BE49F18FF5AD900109980 /* ShortcutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE49418FF5AD900109980 /* ShortcutController.m */; };
+		FA2BE4A018FF5AD900109980 /* ShortcutTestResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE49618FF5AD900109980 /* ShortcutTestResponder.m */; };
+		FA2BE4A118FF5AD900109980 /* TextImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE49818FF5AD900109980 /* TextImportController.m */; };
 		FA2FACB10F99973B0055AEAB /* CerebralImprintDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACB00F99973B0055AEAB /* CerebralImprintDocument.m */; };
 		FA2FACC00F9998A30055AEAB /* CardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACB70F9998A30055AEAB /* CardDeck.m */; };
 		FA2FACC10F9998A30055AEAB /* CardDeckTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACB90F9998A30055AEAB /* CardDeckTest.m */; };
 		FA2FACC30F9998A30055AEAB /* FlashCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACBD0F9998A30055AEAB /* FlashCard.m */; };
 		FA2FACC40F9998A30055AEAB /* LearningTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACBF0F9998A30055AEAB /* LearningTest.m */; };
-		FA2FACD60F9999040055AEAB /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACD40F9999040055AEAB /* PreferencesController.m */; };
 		FA2FACDE0F9999BA0055AEAB /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2FACDD0F9999BA0055AEAB /* Preferences.m */; };
-		FA4BB33F0FE5858400309E1D /* CerebralImprintWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4BB33E0FE5858400309E1D /* CerebralImprintWindowController.m */; };
 		FA5B0D470FDB2C9A0065846D /* DeckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0D460FDB2C9A0065846D /* DeckManager.m */; };
 		FA5B0E8B0FDB3FF70065846D /* CI Icon3.icns in Resources */ = {isa = PBXBuildFile; fileRef = FA5B0E8A0FDB3FF70065846D /* CI Icon3.icns */; };
-		FA5B0EB30FDB44F20065846D /* DeckEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0EA80FDB44F20065846D /* DeckEditorController.m */; };
-		FA5B0EB50FDB44F20065846D /* FlashController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0EAC0FDB44F20065846D /* FlashController.m */; };
-		FA5B0EB60FDB44F20065846D /* MCController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0EAE0FDB44F20065846D /* MCController.m */; };
-		FA5B0EB70FDB44F20065846D /* SAController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B0EB00FDB44F20065846D /* SAController.m */; };
-		FA5B10720FDB7C230065846D /* TextImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5B10710FDB7C230065846D /* TextImportController.m */; };
 		FA5B12C30FDBA81C0065846D /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA5B12C20FDBA81C0065846D /* UserDefaults.plist */; };
-		FA6FBAC818F65075006EF835 /* ShortcutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6FBAC718F65075006EF835 /* ShortcutController.m */; };
 		FAD4B5690FF0497700F99014 /* Cerebral Imprint.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8D15AC370486D014006FF6A4 /* Cerebral Imprint.app */; };
 		FAE7F60A18FB8CF900D59C01 /* ShortcutElement.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA2BE48018FF4FAA00109980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D15AC270486D014006FF6A4;
+			remoteInfo = "Cerebral Imprint";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FAD4B5560FF046C900F99014 /* CopyFiles */ = {
@@ -85,6 +100,32 @@
 		32DBCF750370BD2300C91783 /* Cerebral Imprint_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cerebral Imprint_Prefix.pch"; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Cerebral Imprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cerebral Imprint.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2BE46B18FF4B7C00109980 /* ShortcutParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutParser.h; path = src/ShortcutParser.h; sourceTree = "<group>"; };
+		FA2BE46C18FF4B7C00109980 /* ShortcutParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutParser.m; path = src/ShortcutParser.m; sourceTree = "<group>"; };
+		FA2BE47418FF4FAA00109980 /* Cerebral Imprint Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cerebral Imprint Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2BE47518FF4FAA00109980 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA2BE47918FF4FAA00109980 /* Cerebral Imprint Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cerebral Imprint Tests-Info.plist"; sourceTree = "<group>"; };
+		FA2BE47B18FF4FAA00109980 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA2BE47F18FF4FAA00109980 /* Cerebral Imprint Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cerebral Imprint Tests-Prefix.pch"; sourceTree = "<group>"; };
+		FA2BE48518FF586E00109980 /* ShortcutParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortcutParserTest.m; sourceTree = "<group>"; };
+		FA2BE48718FF5AD900109980 /* CerebralImprintWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CerebralImprintWindowController.h; path = src/CerebralImprintWindowController.h; sourceTree = "<group>"; };
+		FA2BE48818FF5AD900109980 /* CerebralImprintWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CerebralImprintWindowController.m; path = src/CerebralImprintWindowController.m; sourceTree = "<group>"; };
+		FA2BE48918FF5AD900109980 /* DeckEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckEditorController.h; path = src/DeckEditorController.h; sourceTree = "<group>"; };
+		FA2BE48A18FF5AD900109980 /* DeckEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckEditorController.m; path = src/DeckEditorController.m; sourceTree = "<group>"; };
+		FA2BE48B18FF5AD900109980 /* FlashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashController.h; path = src/FlashController.h; sourceTree = "<group>"; };
+		FA2BE48C18FF5AD900109980 /* FlashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlashController.m; path = src/FlashController.m; sourceTree = "<group>"; };
+		FA2BE48D18FF5AD900109980 /* MCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCController.h; path = src/MCController.h; sourceTree = "<group>"; };
+		FA2BE48E18FF5AD900109980 /* MCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCController.m; path = src/MCController.m; sourceTree = "<group>"; };
+		FA2BE48F18FF5AD900109980 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = src/PreferencesController.h; sourceTree = "<group>"; };
+		FA2BE49018FF5AD900109980 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = src/PreferencesController.m; sourceTree = "<group>"; };
+		FA2BE49118FF5AD900109980 /* SAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAController.h; path = src/SAController.h; sourceTree = "<group>"; };
+		FA2BE49218FF5AD900109980 /* SAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAController.m; path = src/SAController.m; sourceTree = "<group>"; };
+		FA2BE49318FF5AD900109980 /* ShortcutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutController.h; path = src/ShortcutController.h; sourceTree = "<group>"; };
+		FA2BE49418FF5AD900109980 /* ShortcutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutController.m; path = src/ShortcutController.m; sourceTree = "<group>"; };
+		FA2BE49518FF5AD900109980 /* ShortcutTestResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutTestResponder.h; path = src/ShortcutTestResponder.h; sourceTree = "<group>"; };
+		FA2BE49618FF5AD900109980 /* ShortcutTestResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutTestResponder.m; path = src/ShortcutTestResponder.m; sourceTree = "<group>"; };
+		FA2BE49718FF5AD900109980 /* TextImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextImportController.h; path = src/TextImportController.h; sourceTree = "<group>"; };
+		FA2BE49818FF5AD900109980 /* TextImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextImportController.m; path = src/TextImportController.m; sourceTree = "<group>"; };
 		FA2FACAF0F99973B0055AEAB /* CerebralImprintDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CerebralImprintDocument.h; path = src/CerebralImprintDocument.h; sourceTree = "<group>"; };
 		FA2FACB00F99973B0055AEAB /* CerebralImprintDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CerebralImprintDocument.m; path = src/CerebralImprintDocument.m; sourceTree = "<group>"; };
 		FA2FACB60F9998A30055AEAB /* CardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardDeck.h; path = src/CardDeck.h; sourceTree = SOURCE_ROOT; };
@@ -95,29 +136,13 @@
 		FA2FACBD0F9998A30055AEAB /* FlashCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlashCard.m; path = src/FlashCard.m; sourceTree = SOURCE_ROOT; };
 		FA2FACBE0F9998A30055AEAB /* LearningTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LearningTest.h; path = src/LearningTest.h; sourceTree = SOURCE_ROOT; };
 		FA2FACBF0F9998A30055AEAB /* LearningTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LearningTest.m; path = src/LearningTest.m; sourceTree = SOURCE_ROOT; };
-		FA2FACD30F9999040055AEAB /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = src/PreferencesController.h; sourceTree = SOURCE_ROOT; };
-		FA2FACD40F9999040055AEAB /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = src/PreferencesController.m; sourceTree = SOURCE_ROOT; };
 		FA2FACD50F9999040055AEAB /* PreferencesKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesKeys.h; path = src/PreferencesKeys.h; sourceTree = SOURCE_ROOT; };
 		FA2FACDC0F9999BA0055AEAB /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preferences.h; path = src/Preferences.h; sourceTree = SOURCE_ROOT; };
 		FA2FACDD0F9999BA0055AEAB /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Preferences.m; path = src/Preferences.m; sourceTree = SOURCE_ROOT; };
-		FA4BB33D0FE5858400309E1D /* CerebralImprintWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CerebralImprintWindowController.h; path = src/CerebralImprintWindowController.h; sourceTree = "<group>"; };
-		FA4BB33E0FE5858400309E1D /* CerebralImprintWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CerebralImprintWindowController.m; path = src/CerebralImprintWindowController.m; sourceTree = "<group>"; };
 		FA5B0D450FDB2C9A0065846D /* DeckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckManager.h; path = src/DeckManager.h; sourceTree = "<group>"; };
 		FA5B0D460FDB2C9A0065846D /* DeckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckManager.m; path = src/DeckManager.m; sourceTree = "<group>"; };
 		FA5B0E8A0FDB3FF70065846D /* CI Icon3.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "CI Icon3.icns"; path = "resource/CI Icon3.icns"; sourceTree = "<group>"; };
-		FA5B0EA70FDB44F20065846D /* DeckEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeckEditorController.h; path = src/DeckEditorController.h; sourceTree = "<group>"; };
-		FA5B0EA80FDB44F20065846D /* DeckEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeckEditorController.m; path = src/DeckEditorController.m; sourceTree = "<group>"; };
-		FA5B0EAB0FDB44F20065846D /* FlashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashController.h; path = src/FlashController.h; sourceTree = "<group>"; };
-		FA5B0EAC0FDB44F20065846D /* FlashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlashController.m; path = src/FlashController.m; sourceTree = "<group>"; };
-		FA5B0EAD0FDB44F20065846D /* MCController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCController.h; path = src/MCController.h; sourceTree = "<group>"; };
-		FA5B0EAE0FDB44F20065846D /* MCController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCController.m; path = src/MCController.m; sourceTree = "<group>"; };
-		FA5B0EAF0FDB44F20065846D /* SAController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SAController.h; path = src/SAController.h; sourceTree = "<group>"; };
-		FA5B0EB00FDB44F20065846D /* SAController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SAController.m; path = src/SAController.m; sourceTree = "<group>"; };
-		FA5B10700FDB7C230065846D /* TextImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextImportController.h; path = src/TextImportController.h; sourceTree = "<group>"; };
-		FA5B10710FDB7C230065846D /* TextImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextImportController.m; path = src/TextImportController.m; sourceTree = "<group>"; };
 		FA5B12C20FDBA81C0065846D /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
-		FA6FBAC618F65075006EF835 /* ShortcutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutController.h; path = src/ShortcutController.h; sourceTree = "<group>"; };
-		FA6FBAC718F65075006EF835 /* ShortcutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutController.m; path = src/ShortcutController.m; sourceTree = "<group>"; };
 		FAD4B59C0FF06CCE00F99014 /* Readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Readme.rtf; sourceTree = "<group>"; };
 		FAE7F60818FB8CF900D59C01 /* ShortcutElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShortcutElement.h; path = src/ShortcutElement.h; sourceTree = "<group>"; };
 		FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShortcutElement.m; path = src/ShortcutElement.m; sourceTree = "<group>"; };
@@ -129,6 +154,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2BE47118FF4FAA00109980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BE47618FF4FAA00109980 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				8D15AC370486D014006FF6A4 /* Cerebral Imprint.app */,
+				FA2BE47418FF4FAA00109980 /* Cerebral Imprint Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +200,7 @@
 			children = (
 				2A37F4AFFDCFA73011CA2CEA /* Source */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				FA2BE47718FF4FAA00109980 /* Cerebral Imprint Tests */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 			);
@@ -175,39 +210,26 @@
 		2A37F4AFFDCFA73011CA2CEA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FA2BE46A18FF46AE00109980 /* controllers */,
 				FA2FACB60F9998A30055AEAB /* CardDeck.h */,
 				FA2FACB70F9998A30055AEAB /* CardDeck.m */,
 				FA2FACB80F9998A30055AEAB /* CardDeckTest.h */,
 				FA2FACB90F9998A30055AEAB /* CardDeckTest.m */,
+				FA2BE46B18FF4B7C00109980 /* ShortcutParser.h */,
+				FA2BE46C18FF4B7C00109980 /* ShortcutParser.m */,
 				32DBCF750370BD2300C91783 /* Cerebral Imprint_Prefix.pch */,
 				FA2FACAF0F99973B0055AEAB /* CerebralImprintDocument.h */,
 				FA2FACB00F99973B0055AEAB /* CerebralImprintDocument.m */,
-				FA4BB33D0FE5858400309E1D /* CerebralImprintWindowController.h */,
-				FA4BB33E0FE5858400309E1D /* CerebralImprintWindowController.m */,
-				FA5B0EA70FDB44F20065846D /* DeckEditorController.h */,
-				FA5B0EA80FDB44F20065846D /* DeckEditorController.m */,
 				FA5B0D450FDB2C9A0065846D /* DeckManager.h */,
 				FA5B0D460FDB2C9A0065846D /* DeckManager.m */,
 				FA2FACBC0F9998A30055AEAB /* FlashCard.h */,
 				FA2FACBD0F9998A30055AEAB /* FlashCard.m */,
-				FA5B0EAB0FDB44F20065846D /* FlashController.h */,
-				FA5B0EAC0FDB44F20065846D /* FlashController.m */,
 				FA2FACBE0F9998A30055AEAB /* LearningTest.h */,
 				FA2FACBF0F9998A30055AEAB /* LearningTest.m */,
 				2A37F4B0FDCFA73011CA2CEA /* main.m */,
-				FA5B0EAD0FDB44F20065846D /* MCController.h */,
-				FA5B0EAE0FDB44F20065846D /* MCController.m */,
 				FA2FACDC0F9999BA0055AEAB /* Preferences.h */,
 				FA2FACDD0F9999BA0055AEAB /* Preferences.m */,
-				FA2FACD30F9999040055AEAB /* PreferencesController.h */,
-				FA2FACD40F9999040055AEAB /* PreferencesController.m */,
 				FA2FACD50F9999040055AEAB /* PreferencesKeys.h */,
-				FA5B0EAF0FDB44F20065846D /* SAController.h */,
-				FA5B0EB00FDB44F20065846D /* SAController.m */,
-				FA5B10700FDB7C230065846D /* TextImportController.h */,
-				FA5B10710FDB7C230065846D /* TextImportController.m */,
-				FA6FBAC618F65075006EF835 /* ShortcutController.h */,
-				FA6FBAC718F65075006EF835 /* ShortcutController.m */,
 				FAE7F60818FB8CF900D59C01 /* ShortcutElement.h */,
 				FAE7F60918FB8CF900D59C01 /* ShortcutElement.m */,
 			);
@@ -233,9 +255,54 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				FA2BE47518FF4FAA00109980 /* XCTest.framework */,
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2BE46A18FF46AE00109980 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE48718FF5AD900109980 /* CerebralImprintWindowController.h */,
+				FA2BE48818FF5AD900109980 /* CerebralImprintWindowController.m */,
+				FA2BE48918FF5AD900109980 /* DeckEditorController.h */,
+				FA2BE48A18FF5AD900109980 /* DeckEditorController.m */,
+				FA2BE48B18FF5AD900109980 /* FlashController.h */,
+				FA2BE48C18FF5AD900109980 /* FlashController.m */,
+				FA2BE48D18FF5AD900109980 /* MCController.h */,
+				FA2BE48E18FF5AD900109980 /* MCController.m */,
+				FA2BE48F18FF5AD900109980 /* PreferencesController.h */,
+				FA2BE49018FF5AD900109980 /* PreferencesController.m */,
+				FA2BE49118FF5AD900109980 /* SAController.h */,
+				FA2BE49218FF5AD900109980 /* SAController.m */,
+				FA2BE49318FF5AD900109980 /* ShortcutController.h */,
+				FA2BE49418FF5AD900109980 /* ShortcutController.m */,
+				FA2BE49518FF5AD900109980 /* ShortcutTestResponder.h */,
+				FA2BE49618FF5AD900109980 /* ShortcutTestResponder.m */,
+				FA2BE49718FF5AD900109980 /* TextImportController.h */,
+				FA2BE49818FF5AD900109980 /* TextImportController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		FA2BE47718FF4FAA00109980 /* Cerebral Imprint Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE48518FF586E00109980 /* ShortcutParserTest.m */,
+				FA2BE47818FF4FAA00109980 /* Supporting Files */,
+			);
+			path = "Cerebral Imprint Tests";
+			sourceTree = "<group>";
+		};
+		FA2BE47818FF4FAA00109980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BE47918FF4FAA00109980 /* Cerebral Imprint Tests-Info.plist */,
+				FA2BE47A18FF4FAA00109980 /* InfoPlist.strings */,
+				FA2BE47F18FF4FAA00109980 /* Cerebral Imprint Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +326,24 @@
 			productReference = 8D15AC370486D014006FF6A4 /* Cerebral Imprint.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FA2BE47318FF4FAA00109980 /* Cerebral Imprint Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2BE48218FF4FAA00109980 /* Build configuration list for PBXNativeTarget "Cerebral Imprint Tests" */;
+			buildPhases = (
+				FA2BE47018FF4FAA00109980 /* Sources */,
+				FA2BE47118FF4FAA00109980 /* Frameworks */,
+				FA2BE47218FF4FAA00109980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA2BE48118FF4FAA00109980 /* PBXTargetDependency */,
+			);
+			name = "Cerebral Imprint Tests";
+			productName = "Cerebral Imprint Tests";
+			productReference = FA2BE47418FF4FAA00109980 /* Cerebral Imprint Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -266,6 +351,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					FA2BE47318FF4FAA00109980 = {
+						TestTargetID = 8D15AC270486D014006FF6A4;
+					};
+				};
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Cerebral Imprint" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -281,6 +371,7 @@
 				8D15AC270486D014006FF6A4 /* Cerebral Imprint */,
 				FAD4B5570FF046C900F99014 /* Install Cerebral Imprint */,
 				FAD4B56E0FF04A0800F99014 /* Build DMG */,
+				FA2BE47318FF4FAA00109980 /* Cerebral Imprint Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +387,14 @@
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				FA5B0E8B0FDB3FF70065846D /* CI Icon3.icns in Resources */,
 				FA5B12C30FDBA81C0065846D /* UserDefaults.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2BE47218FF4FAA00109980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BE47C18FF4FAA00109980 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,27 +421,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2BE49F18FF5AD900109980 /* ShortcutController.m in Sources */,
+				FA2BE49D18FF5AD900109980 /* PreferencesController.m in Sources */,
+				FA2BE49E18FF5AD900109980 /* SAController.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				FA2FACB10F99973B0055AEAB /* CerebralImprintDocument.m in Sources */,
 				FA2FACC00F9998A30055AEAB /* CardDeck.m in Sources */,
+				FA2BE4A118FF5AD900109980 /* TextImportController.m in Sources */,
 				FA2FACC10F9998A30055AEAB /* CardDeckTest.m in Sources */,
+				FA2BE49B18FF5AD900109980 /* FlashController.m in Sources */,
+				FA2BE49C18FF5AD900109980 /* MCController.m in Sources */,
 				FA2FACC30F9998A30055AEAB /* FlashCard.m in Sources */,
 				FA2FACC40F9998A30055AEAB /* LearningTest.m in Sources */,
-				FA2FACD60F9999040055AEAB /* PreferencesController.m in Sources */,
 				FA2FACDE0F9999BA0055AEAB /* Preferences.m in Sources */,
 				FA5B0D470FDB2C9A0065846D /* DeckManager.m in Sources */,
-				FA5B0EB30FDB44F20065846D /* DeckEditorController.m in Sources */,
-				FA5B0EB50FDB44F20065846D /* FlashController.m in Sources */,
-				FA5B0EB60FDB44F20065846D /* MCController.m in Sources */,
+				FA2BE49918FF5AD900109980 /* CerebralImprintWindowController.m in Sources */,
+				FA2BE46D18FF4B7C00109980 /* ShortcutParser.m in Sources */,
 				FAE7F60A18FB8CF900D59C01 /* ShortcutElement.m in Sources */,
-				FA5B0EB70FDB44F20065846D /* SAController.m in Sources */,
-				FA5B10720FDB7C230065846D /* TextImportController.m in Sources */,
-				FA4BB33F0FE5858400309E1D /* CerebralImprintWindowController.m in Sources */,
-				FA6FBAC818F65075006EF835 /* ShortcutController.m in Sources */,
+				FA2BE4A018FF5AD900109980 /* ShortcutTestResponder.m in Sources */,
+				FA2BE49A18FF5AD900109980 /* DeckEditorController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2BE47018FF4FAA00109980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2BE48618FF586E00109980 /* ShortcutParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA2BE48118FF4FAA00109980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D15AC270486D014006FF6A4 /* Cerebral Imprint */;
+			targetProxy = FA2BE48018FF4FAA00109980 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
@@ -375,6 +492,14 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA2BE47A18FF4FAA00109980 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2BE47B18FF4FAA00109980 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +544,7 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/Developer/Library/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -432,11 +558,109 @@
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SDKROOT)/Developer/Library/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_PATH = /Applications/Education;
 				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA2BE48318FF4FAA00109980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cerebral Imprint.app/Contents/MacOS/Cerebral Imprint";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cerebral Imprint Tests/Cerebral Imprint Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Cerebral Imprint Tests/Cerebral Imprint Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA2BE48418FF4FAA00109980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cerebral Imprint.app/Contents/MacOS/Cerebral Imprint";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cerebral Imprint Tests/Cerebral Imprint Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Cerebral Imprint Tests/Cerebral Imprint Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -501,6 +725,15 @@
 			buildConfigurations = (
 				C05733CC08A9546B00998B17 /* Debug */,
 				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2BE48218FF4FAA00109980 /* Build configuration list for PBXNativeTarget "Cerebral Imprint Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2BE48318FF4FAA00109980 /* Debug */,
+				FA2BE48418FF4FAA00109980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

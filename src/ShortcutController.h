@@ -18,10 +18,8 @@
     
     // The current test we are testing
     CardDeckTest * currentTest;
-    
-    
-    
 }
+
 - (void) updateView;
 - (void) quit;
 - (void) setCurrentTest:(CardDeckTest *)test;

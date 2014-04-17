@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FA2BE47318FF4FAA00109980"
+               BuildableName = "Cerebral Imprint Tests.xctest"
+               BlueprintName = "Cerebral Imprint Tests"
+               ReferencedContainer = "container:Cerebral Imprint.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

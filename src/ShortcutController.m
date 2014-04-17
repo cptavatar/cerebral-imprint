@@ -9,17 +9,18 @@
 #import "ShortcutController.h"
 
 @implementation ShortcutController
+
 - (void) windowDidLoad {
     NSLog(@"Loading shortcut controller");
-   }
-
+}
 
 - (void) updateView {
     [statusLabel setStringValue:@"status"];
     [questionLabel setStringValue:@"question"];
 }
+
 - (void) quit {
-  [scPanel close];
+    [scPanel close];
 }
 
 // delegate method for panel - end modal on panel close
@@ -27,9 +28,9 @@
     [NSEvent removeMonitor:eventMonitor];
     [NSApp stopModal];
 }
+
 //handler for end test button
-- (IBAction) quit:(id)sender
-{
+- (IBAction) quit:(id)sender {
     [self quit];
 }
 
@@ -43,10 +44,10 @@
         return theEvent;
     };
     eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask handler:handler];
-
-
 }
+
 - (void)keyDown:(NSEvent *)event {
     [statusLabel setStringValue:[event characters]];
 }
+
 @end
