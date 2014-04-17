@@ -14,7 +14,13 @@
     BOOL cmd;
     BOOL alt;
     BOOL ctl;
-    NSString * chr;
+    NSString * character;
 }
 
+- (id) init:(NSString *)theChar shift:(BOOL)isShift cmd:(BOOL)isCmd alt:(BOOL)isAlt ctl:(BOOL)isCtl;
+- (NSString *) character;
+- (BOOL) isShift;
+- (BOOL) isCmd;
+- (BOOL) isAlt;
+- (BOOL) isCtl;
 @end

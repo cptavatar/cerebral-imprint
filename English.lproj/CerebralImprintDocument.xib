@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1050" defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
@@ -247,7 +247,7 @@
                         <rect key="frame" x="488" y="37" width="114" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Total Views" id="100230">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -256,7 +256,7 @@
                         <rect key="frame" x="488" y="53" width="114" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Card Known" id="100231">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -265,7 +265,7 @@
                         <rect key="frame" x="488" y="20" width="122" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Recent Percentage" id="100229">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -274,7 +274,7 @@
                         <rect key="frame" x="489" y="2" width="122" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Overall Percentage" id="100228">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -283,7 +283,7 @@
                         <rect key="frame" x="613" y="53" width="85" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="No" id="100233">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -292,7 +292,7 @@
                         <rect key="frame" x="612" y="37" width="85" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="0" id="100234">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -301,7 +301,7 @@
                         <rect key="frame" x="613" y="20" width="85" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="0%" id="100235">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -310,7 +310,7 @@
                         <rect key="frame" x="613" y="2" width="85" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" placeholderString="0%" id="100232">
-                            <font key="font" metaFont="system" size="10"/>
+                            <font key="font" size="10" name="LucidaGrande"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -454,7 +454,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box title="Question" id="100167">
-                        <rect key="frame" x="17" y="273" width="482" height="86"/>
+                        <rect key="frame" x="17" y="272.99999999999994" width="482" height="86"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <view key="contentView">
                             <rect key="frame" x="2" y="2" width="478" height="69"/>
@@ -705,14 +705,14 @@ DQ
                         <rect key="frame" x="21" y="60" width="451" height="127"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <clipView key="contentView" id="0yp-wq-fgI">
-                            <rect key="frame" x="1" y="1" width="449" height="125"/>
+                            <rect key="frame" x="1" y="1" width="434" height="125"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="100153">
-                                    <rect key="frame" x="0.0" y="0.0" width="449" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="434" height="125"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="449" height="125"/>
+                                    <size key="minSize" width="434" height="125"/>
                                     <size key="maxSize" width="885" height="10000000"/>
                                     <attributedString key="textStorage">
                                         <fragment content="Lorem ipsum dolor sit er ">
@@ -1005,7 +1005,7 @@ DQ
                                         </fragment>
                                     </attributedString>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <size key="minSize" width="449" height="125"/>
+                                    <size key="minSize" width="434" height="125"/>
                                     <size key="maxSize" width="885" height="10000000"/>
                                     <connections>
                                         <outlet property="delegate" destination="100467" id="100625"/>
