@@ -33,29 +33,40 @@ NSDictionary * APPLE;
         forKeys:[[NSArray alloc]initWithObjects:EMACS_ALT,EMACS_CMD,EMACS_CTL, nil]];
     APPLE = [[NSDictionary alloc] initWithObjects:[[NSArray alloc]initWithObjects:CTL,ALT,CMD,SHIFT, nil]
                                           forKeys:[[NSArray alloc]initWithObjects:APPLE_CTL,APPLE_ALT,APPLE_CMD,APPLE_SHIFT, nil]];
-    ;
     return self;
 }
 
 - (NSArray *) parse:(NSString*)input {
-    if([self startsWith:input array:EMACS]){
-        
-    }
-}
-
-- (NSArray *) parse:(NSString *)input state:(NSMutableDictionary *)keyState mode:(SEL)parseMode {
+    BOOL emacsMode = [self startsWith:input array:EMACS];
+    NSMutableArray * shortcuts = [[NSMutableArray alloc] init];
     
+    
+    return shortcuts;
 }
 
-- (NSString *) findEmacsSpecial:(NSString *)input state:(NSMutableDictionary*)dict{
-    return [self findSpecial:input state:input array:EMACS];
+- (NSArray *) parse:(NSString *)input shortcuts:(NSMutableArray*)shortcuts isEmacs:(BOOL)isEmacs  {
+    if(input == nil || ([input length] == 0)){
+        return shortcuts;
+    }
+    NSString * previous = input;
+    do {
+    
+    while()
 }
 
-- (NSString *) findSpecial:(NSString *)input state:(NSMutableArray*)dict array:(NSArray*)array {
-    for(int i = 0; i < )
+
+- (NSString *) findSpecial:(NSString *)input state:(NSMutableDictionary*)state map:(NSDictionary*)map {
+    for(NSString * key in [map allKeys]){
+        if([input hasPrefix:key]){
+            [state setValue:[NSNumber numberWithBool:true]];
+            return [self findSpecial:[input substringFromIndex:[key length]] state:state map:map];
+        }
+    }
+    return input;
 }
+
 - (BOOL) startsWith:(NSString *)input array:(NSArray *)array {
-    for (int i= 0; i<[array count]; i++) {i
+    for (int i= 0; i<[array count]; i++) {
         if ([input hasPrefix:[array objectAtIndex:i]]) {
             return true;
         }
