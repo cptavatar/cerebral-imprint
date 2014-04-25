@@ -37,32 +37,55 @@ NSDictionary * APPLE;
 }
 
 - (NSArray *) parse:(NSString*)input {
-    BOOL emacsMode = [self startsWith:input array:EMACS];
+    BOOL emacsMode = [self startsWith:input array:[EMACS allKeys]];
     NSMutableArray * shortcuts = [[NSMutableArray alloc] init];
     
-    
-    return shortcuts;
+    return [self parse:input shortcuts:shortcuts  isEmacs:emacsMode];
 }
 
 - (NSArray *) parse:(NSString *)input shortcuts:(NSMutableArray*)shortcuts isEmacs:(BOOL)isEmacs  {
     if(input == nil || ([input length] == 0)){
         return shortcuts;
     }
-    NSString * previous = input;
-    do {
     
-    while()
+    NSMutableSet* modifiers = [[NSMutableSet alloc]init];
+    NSString * postModifers = [self findSpecial:input state:modifiers map:(isEmacs ? EMACS : APPLE)];
+    
+    if ([postModifers length] > 0){
+        NSString * key = [postModifers substringToIndex:1];
+        if(! isEmacs){
+            key = [key lowercaseString];
+        }
+        if(! [key isEqualToString:@" "]){
+            [shortcuts addObject:[self createShortcut:key state:modifiers]];
+        }
+    }
+    
+    if ([postModifers length] > 1){
+        return [self parse:[postModifers substringFromIndex:1] shortcuts:shortcuts isEmacs:isEmacs];
+    } else {
+        return shortcuts;
+    }
+    
 }
 
 
-- (NSString *) findSpecial:(NSString *)input state:(NSMutableDictionary*)state map:(NSDictionary*)map {
+- (NSString *) findSpecial:(NSString *)input state:(NSMutableSet*)state map:(NSDictionary*)map {
     for(NSString * key in [map allKeys]){
         if([input hasPrefix:key]){
-            [state setValue:[NSNumber numberWithBool:true]];
+            [state addObject:[map objectForKey:key]];
             return [self findSpecial:[input substringFromIndex:[key length]] state:state map:map];
         }
     }
     return input;
+}
+
+- (ShortcutElement*) createShortcut:(NSString*)input state:(NSMutableSet*)state {
+    return [[ShortcutElement alloc]init:input
+            shift:[state containsObject:SHIFT]
+            cmd:[state containsObject:CMD]
+            alt:[state containsObject:ALT]
+            ctl:[state containsObject:CTL]];
 }
 
 - (BOOL) startsWith:(NSString *)input array:(NSArray *)array {

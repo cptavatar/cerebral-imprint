@@ -30,7 +30,7 @@
     [super tearDown];
 }
 
-- (void)basicEmacsStyleTest {
+- (void)testBasicEmacsStyle {
     NSArray * results = [parser parse:@"C-x Super-M-b cat"];
     XCTAssertEqual(5,[results count]);
     [self assertKey:[results objectAtIndex:0] expectedChar:@"x" isShift:false isCtrl:true isCmd:false isAlt:false];
@@ -40,7 +40,7 @@
     [self assertKey:[results objectAtIndex:0] expectedChar:@"t" isShift:false isCtrl:false isCmd:false isAlt:false];
     
 }
-- (void)basicAppleShortcutsTest {
+- (void)testBasicAppleShortcutsTest {
     NSArray * results = [parser parse:@"⌘c"];
     XCTAssertEqual(1,[results count]);
     [self assertKey:[results objectAtIndex:0] expectedChar:@"c" isShift:false isCtrl:false isCmd:true isAlt:false];
