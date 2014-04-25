@@ -26,18 +26,43 @@
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testBasicEmacsStyle {
+- (void)testBasicEmacsCX {
+     NSArray * results = [parser parse:@"C-x"];
+    XCTAssertEqual(1,[results count]);
+    [self assertKey:[results objectAtIndex:0] expectedChar:@"x" isShift:false isCtrl:true isCmd:false isAlt:false];
+    
+}
+
+- (void)testBasicEmacsCMX {
+    NSArray * results = [parser parse:@"C-M-x"];
+    XCTAssertEqual(1,[results count]);
+    [self assertKey:[results objectAtIndex:0] expectedChar:@"x" isShift:false isCtrl:true isCmd:false isAlt:true];
+}
+
+- (void)testBasicEmacsMXCmd {
+    NSArray * results = [parser parse:@"M-x help"];
+    XCTAssertEqual(5,[results count]);
+    [self assertKey:[results objectAtIndex:0] expectedChar:@"x" isShift:false isCtrl:false isCmd:false isAlt:true];
+    [self assertKey:[results objectAtIndex:1] expectedChar:@"h" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:2] expectedChar:@"e" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:3] expectedChar:@"l" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:4] expectedChar:@"p" isShift:false isCtrl:false isCmd:false isAlt:false];
+    
+}
+
+- (void)testComplicatedEmacsStyle {
+    
+    
     NSArray * results = [parser parse:@"C-x Super-M-b cat"];
     XCTAssertEqual(5,[results count]);
     [self assertKey:[results objectAtIndex:0] expectedChar:@"x" isShift:false isCtrl:true isCmd:false isAlt:false];
-    [self assertKey:[results objectAtIndex:0] expectedChar:@"b" isShift:false isCtrl:false isCmd:true isAlt:true];
-    [self assertKey:[results objectAtIndex:0] expectedChar:@"c" isShift:false isCtrl:false isCmd:false isAlt:false];
-    [self assertKey:[results objectAtIndex:0] expectedChar:@"a" isShift:false isCtrl:false isCmd:false isAlt:false];
-    [self assertKey:[results objectAtIndex:0] expectedChar:@"t" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:1] expectedChar:@"b" isShift:false isCtrl:false isCmd:true isAlt:true];
+    [self assertKey:[results objectAtIndex:2] expectedChar:@"c" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:3] expectedChar:@"a" isShift:false isCtrl:false isCmd:false isAlt:false];
+    [self assertKey:[results objectAtIndex:4] expectedChar:@"t" isShift:false isCtrl:false isCmd:false isAlt:false];
     
 }
 - (void)testBasicAppleShortcutsTest {
@@ -52,7 +77,7 @@
 }
 
 - (void) assertKey:(ShortcutElement *) element expectedChar:(NSString *)chars isShift:(BOOL)isShift isCtrl:(BOOL)isCtrl isCmd:(BOOL)isCmd isAlt:(BOOL)isAlt {
-    XCTAssertEqual(chars, [element character]);
+    XCTAssertEqualObjects(chars, [element character]);
     XCTAssertEqual(isAlt, [element isAlt]);
     XCTAssertEqual(isCmd, [element isCmd]);
     XCTAssertEqual(isCtrl, [element isCtl]);

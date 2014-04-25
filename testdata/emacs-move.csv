@@ -1,0 +1,50 @@
+Move character backwards
+C-b
+Move character forwards
+C-f
+Move word backwards
+M-b
+Move word forwards
+M-f
+Move line backwards
+C-p
+Move line forwards
+C-n
+Go to line beginning
+C-a
+Go to line end
+C-e
+Move sentence backwards
+M-a
+Move sentence forwards
+M-e
+Move paragraph backwards
+M-{
+Move paragraph forwards
+M-}
+Move page backwards
+C-x [
+Move page forwards
+C-x ]
+Move sexp backwards
+C-M-b
+Move sexp forwards
+C-M-f
+Move function backwards
+C-M-a
+Move function forwards
+C-M-e
+Go to beginning
+M-<
+Go to end
+M->
+Scroll to next screen
+C-v
+Scroll to previous screen
+M-v
+Scroll current line to center, top, bottom
+C-l
+Goto line
+M-g g
+Back to indentation
+M-m
