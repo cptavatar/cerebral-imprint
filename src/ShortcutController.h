@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CardDeckTest.h"
+#import "ShortcutParser.h"
 
 @interface ShortcutController : NSObject
 {
@@ -18,6 +19,8 @@
     
     // The current test we are testing
     CardDeckTest * currentTest;
+    ShortcutParser * parser;
+    NSMutableArray* shortcuts;
 }
 
 - (void) updateView;
