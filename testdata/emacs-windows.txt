@@ -1,0 +1,18 @@
+Delete all other windows
+C-x 1
+Split window, horizontal
+C-x 2
+Delete this window
+C-x 0
+Split window side by side
+C-x 3
+Scroll other window
+C-M-v
+Switch cursor to another window
+C-x o
+Select buffer in other window
+C-x 4 b
+Find file in other window
+C-x 4 f
+Run dired in other window 
+C-x 4 d

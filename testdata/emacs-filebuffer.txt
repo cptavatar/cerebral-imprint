@@ -1,0 +1,16 @@
+Read a file
+C-x C-f
+Save a file
+C-x C-s
+Save all files
+C-x s
+Insert contents of file at point
+C-x i 
+Write buffer to specified file
+C-x C-w
+Select another buffer
+C-x b
+List all buffers
+C-x C-b
+Kill a buffer
+C-x k

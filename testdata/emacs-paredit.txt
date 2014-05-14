@@ -1,0 +1,8 @@
+Move sexp forward
+C-M-f
+Move sexp backwards
+C-B-b
+Slurp forwards sexp
+C-<right>
+Barf forwards
+C-<left>

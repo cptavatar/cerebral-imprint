@@ -1,0 +1,12 @@
+Transpose characters
+C-t
+Transpose words
+M-t
+Transpose lines
+C-x C-t
+Transpose sexps
+C-M-t
+Spell check entire buffer
+M-x ispell-buffer
+Indent region
+C-M-\

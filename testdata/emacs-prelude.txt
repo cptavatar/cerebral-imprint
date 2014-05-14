@@ -1,0 +1,42 @@
+Hippie-expand
+M-/
+Open ibuffer
+C-x C-b
+Open magit status buffer
+C-x g
+Run expand-region
+C-=
+Open Helm
+C-c h
+Open the currently visited file with an external program.
+C-c o
+Search for a symbol
+C-c i
+Search in Google for the thing under point
+C-c g
+Insert an empty line above the current line and indent it properly
+Super-o
+Insert an empty line and indent it properly
+S-RET
+Move the current line or region up
+C-S-up
+Move the current line or region down
+C-S-down
+Fix indentation in buffer and strip whitespace
+C-c n
+Open recently visited file
+C-c f
+Indent region (if selected) or the entire buffer
+C-M-\
+Kill all open buffers except the one you're currently in
+C-c k
+Join lines
+Super-j
+Magit status
+Super-m m
+Magit log
+Super-m l
+Magit file log
+Super-m f
+Magit blame mode
+Super-m b

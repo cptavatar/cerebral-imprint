@@ -1,0 +1,10 @@
+Delete all other frames
+C-x 5 1
+Split frame above and beyond
+C-x 5 2
+Delete this frame
+C-x 5 0
+Switch cursor to another frame
+C-x 5 0
+Select buffer in other frame
+C-x 5 b

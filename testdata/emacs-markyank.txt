@@ -1,0 +1,24 @@
+Kill character forwards
+C-d
+Kill word backwards
+M-DEL
+Kill Word forwards
+M-d
+Kill to end of line
+C-k
+Kill region
+C-w
+Yank back last thing killed
+C-y
+Replace last yank with previous kill
+M-y
+Set mark here
+C-SPC
+Mark paragraph
+M-h
+Mark sexp
+C-M-@
+Mark function
+C-M-h
+Mark entire buffer
+C-x h
