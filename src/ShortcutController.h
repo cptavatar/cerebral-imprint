@@ -21,6 +21,8 @@
     CardDeckTest * currentTest;
     ShortcutParser * parser;
     NSMutableArray* shortcuts;
+    NSTimer * timer;
+    BOOL waiting;
 }
 
 - (void) updateView;

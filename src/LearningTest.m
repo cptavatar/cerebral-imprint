@@ -144,7 +144,7 @@
     if([pipeline count] > 0)
         [pipeline removeAllObjects];
     
-    [pipeline addObjectsFromArray:set];
+    [pipeline addObjectsFromArray:[set allObjects]];
     
     //Shuffle the contents a bit...
     int i;
