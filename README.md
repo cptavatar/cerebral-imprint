@@ -4,7 +4,7 @@ cerebral-imprint
 CerebralImprint is a cocoa flashcard app I wrote mostly almost 10 years ago to learn Objective-C
 
 
-It allows one to import/export text decks, then perform either multiple choice, fill-in-the-blank, 
+It allows one to import/export/edit decks, then perform either multiple choice, fill-in-the-blank, 
 or simple flip-the-card flashcard style quizzes using your standard forward/backwards/random/leitner options.
 
 
